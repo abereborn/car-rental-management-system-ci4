@@ -44,7 +44,7 @@ This application supports two roles: **Admin** and **Customer**, with features f
 - Multiple payment methods:
   - Cash
   - Bank Transfer
-  - Courier
+  - QRIS
 - Automatic payment status update
 
 ---
