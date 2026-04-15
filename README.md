@@ -1,69 +1,110 @@
-# CodeIgniter 4 Application Starter
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![PHP](https://img.shields.io/badge/PHP-CodeIgniter-blue)
 
-## What is CodeIgniter?
+# 🚗 Car Rental Management System
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## 📖 Description
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+A web-based car rental system built using CodeIgniter.  
+This application supports two roles: **Admin** and **Customer**, with features for managing cars, transactions, and payments.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+---
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+## 👥 User Roles
 
-## Installation & updates
+### 🔐 Admin
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+- Manage car data (add, edit, delete)
+- View user payments
+- Manage borrowers data
+- Monitor transactions
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+### 👤 Customer
 
-## Setup
+- Browse available cars
+- Select rental date
+- Make transactions
+- Complete payment
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+---
 
-## Important Change with index.php
+## 🚀 Features
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+### 🚗 Car Management
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+- Add new car
+- Edit car details (name, brand, plate, price, status)
+- Delete car
 
-**Please** read the user guide for a better explanation of how CI4 works!
+---
 
-## Repository Management
+### 💳 Payment System
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+- Multiple payment methods:
+  - Cash
+  - Bank Transfer
+  - Courier
+- Automatic payment status update
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+---
 
-## Server Requirements
+### 🔄 Transaction Flow
 
-PHP version 8.2 or higher is required, with the following extensions installed:
+1. User selects available car
+2. User chooses rental & return date
+3. System calculates total price
+4. User confirms rental
+5. User completes payment
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+---
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - The end of life date for PHP 8.1 was December 31, 2025.
-> - If you are still using below PHP 8.2, you should upgrade immediately.
-> - The end of life date for PHP 8.2 will be December 31, 2026.
+## 🧠 Example Case
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+- Car: Toyota Innova
+- Price: Rp25.000/day
+- Rental: 15 → 17
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Total:
+
+2 days × Rp25.000 = Rp50.000
+
+---
+
+---
+
+## 🛠️ Tech Stack
+
+- PHP (CodeIgniter 4)
+- MySQL
+- HTML, CSS, JavaScript
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/abereborn/car-rental-management-system-ci4.git
+cd car-rental-management-system-ci4
+composer install
+```
+
+### Setup
+
+- Copy .env.example → .env
+- Configure database
+- Run via Laragon / localhost
+
+### 📸 Screenshots
+
+- Landing page
+  ![Landing page](image.png)
+
+- Admin Dashboard
+  ![Admin dashboard](image-1.png)
+
+-Transaction page
+![Transaction page](image-2.png)
+
+### 👨‍💻 Author
+
+Affan Baihaqi
