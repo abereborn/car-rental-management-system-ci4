@@ -107,7 +107,7 @@ composer install
 
 ![Transaction Page](image-2.png)
 
-### ERD Rental Cars
+### ERD Cars Rent
 
 ![Transaction Page](ERD-RentalMobil.png)
 
