@@ -107,6 +107,10 @@ composer install
 
 ![Transaction Page](image-2.png)
 
+### ERD Rental Cars
+
+![Transaction Page](ERD-RentalMobil.png)
+
 ## 👨‍💻 Author
 
 Affan Baihaqi
