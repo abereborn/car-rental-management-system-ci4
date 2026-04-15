@@ -1,5 +1,6 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![PHP](https://img.shields.io/badge/PHP-CodeIgniter-blue)
+![Role](https://img.shields.io/badge/Role-Admin%20%7C%20User-blue)
 
 # 🚗 Car Rental Management System
 
@@ -62,13 +63,11 @@ This application supports two roles: **Admin** and **Customer**, with features f
 
 - Car: Toyota Innova
 - Price: Rp25.000/day
-- Rental: 15 → 17
+- Rental Date: Day 15 → Day 17
 
-Total:
+**Total:**
 
 2 days × Rp25.000 = Rp50.000
-
----
 
 ---
 
@@ -90,21 +89,24 @@ composer install
 
 ### Setup
 
-- Copy .env.example → .env
+- Copy `.env.example` → `.env`
 - Configure database
 - Run via Laragon / localhost
 
-### 📸 Screenshots
+## 📸 Screenshots
 
-- Landing page
-  ![Landing page](image.png)
+### Landing Page
 
-- Admin Dashboard
-  ![Admin dashboard](image-1.png)
+![Landing Page](image.png)
 
--Transaction page
-![Transaction page](image-2.png)
+### Admin Dashboard
 
-### 👨‍💻 Author
+![Admin Dashboard](image-1.png)
+
+### Transaction Page
+
+![Transaction Page](image-2.png)
+
+## 👨‍💻 Author
 
 Affan Baihaqi
